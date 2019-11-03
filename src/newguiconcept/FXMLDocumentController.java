@@ -17,14 +17,32 @@ import javafx.scene.control.Label;
  * @author Tanner
  */
 public class FXMLDocumentController implements Initializable {
-   
+    players playerOne = new players();
     @FXML
     private Label label;
+    @FXML
+    private Label foodLabel;
+    @FXML
+    private Label woodLabel;
     
     @FXML
     private void handleButtonAction(ActionEvent event) {
         System.out.println("You clicked me!");
         label.setText("Hello World!, Lets GO BOIS!");
+    }
+    
+    @FXML
+    private void forageButtonAction(ActionEvent event) {
+        label.setText("You foraged for wood");
+        System.out.println("You Forage for Wood");
+        woodLabel.setText("Wood: " + playerOne.forageWood());
+    }
+    
+    @FXML
+    private void huntButtonAction(ActionEvent event) {
+        label.setText("You trapped food");
+        System.out.println("You found Food");
+        foodLabel.setText("Food: " + playerOne.huntFood());
     }
     
     @Override

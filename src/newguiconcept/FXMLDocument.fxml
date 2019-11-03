@@ -6,10 +6,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="270.0" prefWidth="402.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="newguiconcept.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="270.0" prefWidth="434.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="newguiconcept.FXMLDocumentController">
   <children>
-    <Button fx:id="button" layoutX="51.0" layoutY="46.0" onAction="#handleButtonAction" text="Click Me!" />
-    <Button id="button" defaultButton="false" layoutX="51.0" layoutY="83.0" mouseTransparent="false" onAction="#handleButtonAction" prefWidth="69.0" text="Forage" underline="false" />
-    <Label fx:id="label" layoutX="51.0" layoutY="135.0" minHeight="16.0" minWidth="69.0" />
+    <Button fx:id="button" layoutX="51.0" layoutY="52.0" onAction="#handleButtonAction" text="Click Me!" />
+    <Button id="button" defaultButton="false" layoutX="51.0" layoutY="83.0" mouseTransparent="false" onAction="#forageButtonAction" prefWidth="69.0" text="Forage" underline="false" />
+    <Label fx:id="label" layoutX="217.0" layoutY="47.0" minHeight="16.0" minWidth="69.0" />
+    <Button id="button" layoutX="51.0" layoutY="114.0" onAction="#huntButtonAction" prefWidth="69.0" text="Hunt" />
+    <Label id="label" fx:id="woodLabel" layoutX="148.0" layoutY="86.0" minHeight="16.0" minWidth="69.0" text="Wood:" />
+    <Label id="label" fx:id="foodLabel" layoutX="148.0" layoutY="116.0" minHeight="16.0" minWidth="69.0" text="Food:" />
   </children>
 </AnchorPane>

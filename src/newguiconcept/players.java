@@ -10,17 +10,39 @@ package newguiconcept;
  * @author Tanner
  */
 public class players {
+
     int health;
     int wood;
-    int coal;
-    
-    players(){
+    int food;
+
+    players() {
         this.health = 25;
         this.wood = 10;
-        this.coal = 10;
+        this.food = 10;
     }
-    
-    public void getHealth(){
-        System.out.println("Health =" + this.health);
+
+    public void getHealth() {
+        System.out.println("Health = " + this.health);
     }
+
+    public void getWood() {
+        System.out.println("Wood = " + this.wood);
+    }
+
+    public void getFood() {
+        System.out.println("Food = " + this.food);
+    }
+
+    public int forageWood() {
+        this.wood += 5;
+        getWood();
+        return (this.wood);
+    }
+
+    public int huntFood() {
+        this.food += 10;
+        getFood();
+        return (this.food);
+    }
+
 }
