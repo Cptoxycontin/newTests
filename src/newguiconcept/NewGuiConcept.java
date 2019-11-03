@@ -16,13 +16,17 @@ import javafx.stage.Stage;
  * @author Tanner
  */
 public class NewGuiConcept extends Application {
-    
+
     @Override
     public void start(Stage stage) throws Exception {
+        players playerOne = new players();
+        
+        playerOne.getHealth();
+
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
-        
+
         Scene scene = new Scene(root);
-        
+
         stage.setScene(scene);
         stage.show();
     }
@@ -33,5 +37,5 @@ public class NewGuiConcept extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    
+
 }
